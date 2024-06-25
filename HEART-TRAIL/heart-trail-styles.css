@@ -1,0 +1,42 @@
+*{
+  /* margin: 0;padding: 0; */
+  /* box-sizing: border-box; */
+}
+
+body{
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  justify-content: center;
+
+}
+
+span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./loved.png);
+  /* Get an icon */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  pointer-events: none;
+  animation: heartTrail 6s linear;
+}
+
+@keyframes heartTrail{
+  0%{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    /* filter: hue-rotate(0); */
+  }
+
+
+  100%{
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(1200deg);
+  }
+}
